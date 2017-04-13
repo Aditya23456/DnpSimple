@@ -1,14 +1,16 @@
 DnpSimple is a simple implementation of the DNP protocol.
 
-It may be useful for
+It is free. It may be useful for
 
-    - Studying and experimenting DNP
-    - Writing test script
+  - Studying and experimenting DNP
+  - Writing test script
 
-Everything is in DnpSimple.py.
+All in one Python file DnpSimple.py.
 
-    - DnpSimple.DnpAsm is DNP assembler class
-    - DnpSimple.DnpDisasm is DNP disassembler class
+  - DnpSimple.DnpAsm is DNP assembler class
+  - DnpSimple.DnpDisasm is DNP disassembler class
+
+At this point, only analog out point is supported.
 
 Take a look at DnpSimpleMaster.py and DnpSimpleSlave.py for example.
 
@@ -33,7 +35,7 @@ Shown below is a session example.
         iin=0x0()
         object (group=40 variation=1 prefix=2 ranges=8(count=1))
           AO index 0: 12345 (flag=0x0)
-    
+
     $ python ~/lab/dnpsimple/DnpSimpleSlave.py
     DNP slave waiting
     > 05 64 14 C4 7B 00 00 00 57 26 C0 C0 05 29 01 28 01 00 00 00 39 30 00 00 00 B5 5A
